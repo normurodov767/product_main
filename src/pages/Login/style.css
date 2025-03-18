@@ -1,0 +1,86 @@
+/* Центрируем всю страницу */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+}
+
+/* Карточка логина */
+.login-card {
+    width: 350px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Заголовок */
+.login-card h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Поля ввода */
+.ant-form-item {
+    text-align: left;
+}
+
+/* Кнопка входа */
+.login-btn {
+    width: 100%;
+    background: #0075fb;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: #005ecb;
+}
+
+/* Ссылка на регистрацию */
+.register-link {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #0075fb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* 🌙 Темная тема */
+body.dark {
+    background: #1B232D;
+}
+
+body.dark .login-card {
+    background: #222d39;
+    color: white;
+}
+
+body.dark .login-btn {
+    background: #409eff;
+}
+
+body.dark .login-btn:hover {
+    background: #0075fb;
+}
+
+body.dark .register-link a {
+    color: #409eff;
+}

@@ -1,0 +1,272 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+    background: white;
+    z-index: 900;
+    transition: all 0.3s ease;
+}
+
+/* Логотип */
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0366d6;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    color: #0256b4;
+    transform: translateX(5px);
+}
+
+/* Профиль */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.profile:hover {
+    background: #f1f8ff;
+    transform: translateY(-2px);
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e1e4e8;
+    transition: all 0.3s ease;
+}
+
+.profile:hover .avatar {
+    border-color: #0366d6;
+    transform: scale(1.05);
+}
+
+.info {
+    flex: 1;
+}
+
+.info h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.info p {
+    margin: 0;
+    font-size: 14px;
+    color: #586069;
+}
+
+/* Кнопка меню */
+.menu-btn {
+    background: none;
+    border: none;
+    color: #586069;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+    background: #f1f8ff;
+    color: #0366d6;
+    transform: rotate(90deg);
+}
+
+/* Collapse */
+.sidebar-collapse {
+    background: transparent;
+    border: none;
+}
+
+.sidebar-collapse .ant-collapse-item {
+    border: none;
+}
+
+.sidebar-collapse .ant-collapse-header {
+    padding: 12px 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-collapse .ant-collapse-header:hover {
+    background: #f1f8ff;
+}
+
+.collapse-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.collapse-label svg {
+    font-size: 16px;
+    color: #0366d6;
+}
+
+/* Guruhlar ro'yxati */
+.ant-list {
+    background: transparent;
+}
+
+.ant-list-item {
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid #e1e4e8;
+}
+
+.ant-list-item:hover {
+    background: #f1f8ff;
+    border-color: #0366d6;
+    transform: translateX(5px);
+}
+
+.ant-list-item.active {
+    background: #f1f8ff;
+    border-color: #0366d6;
+}
+
+.ant-list-item svg {
+    font-size: 16px;
+    color: #0366d6;
+}
+
+.ant-list-item strong {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.ant-list-item.active strong {
+    color: #0366d6;
+}
+
+/* Qo'shish tugmasi */
+.ant-btn-primary {
+    background: #0366d6;
+    border-color: #0366d6;
+    height: 40px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(3, 102, 214, 0.2);
+}
+
+.ant-btn-primary:hover {
+    background: #0256b4;
+    border-color: #0256b4;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(3, 102, 214, 0.3);
+}
+
+/* Dark mode styles */
+.dark .sidebar {
+    background: #1a1a1a;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.dark .logo {
+    color: #58a6ff;
+}
+
+.dark .profile {
+    background: #2d2d2d;
+}
+
+.dark .info h4 {
+    color: #e1e4e8;
+}
+
+.dark .info p {
+    color: #8b949e;
+}
+
+.dark .menu-btn {
+    color: #8b949e;
+}
+
+.dark .ant-collapse-header {
+    background: #2d2d2d;
+    color: #e1e4e8;
+}
+
+.dark .ant-list-item {
+    background: #2d2d2d;
+    border-color: #404040;
+}
+
+.dark .ant-list-item:hover {
+    background: #363636;
+    border-color: #58a6ff;
+}
+
+.dark .ant-list-item strong {
+    color: #e1e4e8;
+}
+
+.dark .ant-list-item.active strong {
+    color: #58a6ff;
+}
+
+/* Scrollbar */
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #e1e4e8;
+    border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #c1c1c1;
+}
+
+.dark::-webkit-scrollbar-thumb {
+    background: #404040;
+}
+
+.dark::-webkit-scrollbar-thumb:hover {
+    background: #4a4a4a;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+    
+    .sidebar.open {
+        transform: translateX(0);
+    }
+}
+  
