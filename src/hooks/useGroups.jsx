@@ -1,4 +1,4 @@
-import API from "@/utils/api";
+import API from "@/utils/API";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
 import { message, Modal } from "antd";

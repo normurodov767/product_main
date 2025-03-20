@@ -1,4 +1,4 @@
-import API from "@/utils/api"
+import API from "@/utils/API"
 import { useMutation } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
